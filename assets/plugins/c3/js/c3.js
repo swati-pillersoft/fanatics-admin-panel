@@ -8,9 +8,11 @@ $(document).ready(function () {
   }
 
   function showPage() {
-    document.getElementById("loader").style.display = "none";
-    // document.getElementById("myDiv").style.display = "block";
-    document.getElementById("bodymain").style.background = "#fff";
+    if ($("#loader").length > 0) {
+      document.getElementById("loader").style.display = "none";
+      // document.getElementById("myDiv").style.display = "block";
+      document.getElementById("bodymain").style.background = "#fff";
+    }
   }
 
   myFunction();

@@ -46,6 +46,8 @@
     <link href="assets/css/sidebar-menu.css" rel="stylesheet" />
     <!-- Custom Style-->
     <link href="assets/css/app-style.css" rel="stylesheet" />
+    <!-- css for edit home page html -->
+    <link rel="stylesheet" href="assets/css/editHomePage.css" />
   </head>
   <body>
     <!-- Start wrapper-->
@@ -63,65 +65,90 @@
         </div>
         <ul class="sidebar-menu do-nicescrol">
           <li>
-             <a href="index.html" class="waves-effect">
-                <img
-                src="./assets/images/dashboard.svg"
+            <a href="index.html" class="waves-effect">
+              <img src="./assets/images/dashboard.svg" class="sidebar-icon" />
+              <span class="side-menu-item">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="manage-user.html" class="waves-effect">
+              <img
+                src="./assets/images/icons admin panel/manage-user.svg"
                 class="sidebar-icon"
-              /> <span class="side-menu-item">Dashboard</span>  
-             </a>
+                alt=""
+              />
+              <span class="side-menu-item">Manage User</span>
+            </a>
           </li>
           <li>
-             <a href="manage-user.html" class="waves-effect">
-                <img src="./assets/images/icons admin panel/manage-user.svg"  class="sidebar-icon" alt="">
-             <span class="side-menu-item">Manage User</span>
-             </a>
+            <a href="manage-tournament.html" class="waves-effect">
+              <img
+                src="./assets/images/icons admin panel/tournament management.png"
+                class="sidebar-icon"
+                alt=""
+              />
+              <span class="side-menu-item">Manage Tournament</span>
+            </a>
           </li>
           <li>
-             <a href="manage-tournament.html" class="waves-effect">
-                <img src="./assets/images/icons admin panel/tournament management.png"  class="sidebar-icon" alt="">
-             <span class="side-menu-item">Manage Tournament</span>
-             </a>
-          </li>
-          <li>
-             <a href="sales-report.html" class="waves-effect">
-                <img src="./assets/images/icons admin panel/sale & report.png"  class="sidebar-icon" alt="">
-             <span class="side-menu-item">Sales & Reports</span>
-             </a>
+            <a href="sales-report.html" class="waves-effect">
+              <img
+                src="./assets/images/icons admin panel/sale & report.png"
+                class="sidebar-icon"
+                alt=""
+              />
+              <span class="side-menu-item">Sales & Reports</span>
+            </a>
           </li>
           <li class="active">
-             <a href="content-management.html" class="waves-effect">
-                <img src="./assets/images/icons admin panel/CMS.svg"  class="sidebar-icon" alt="">
-             <span class="side-menu-item">Content Management</span>
-             </a>
+            <a href="content-management.html" class="waves-effect">
+              <img
+                src="./assets/images/icons admin panel/CMS.svg"
+                class="sidebar-icon"
+                alt=""
+              />
+              <span class="side-menu-item">Content Management</span>
+            </a>
           </li>
           <li>
-             <a href="support.html" class="waves-effect">
-                <img src="./assets/images/icons admin panel/support.png"  class="sidebar-icon" alt="">
-             <span class="side-menu-item">Support</span>
-             </a>
+            <a href="support.html" class="waves-effect">
+              <img
+                src="./assets/images/icons admin panel/support.png"
+                class="sidebar-icon"
+                alt=""
+              />
+              <span class="side-menu-item">Support</span>
+            </a>
           </li>
           <li>
-             <a href="subscription-plan.html" class="waves-effect">
-                <img src="./assets/images/icons admin panel/subcription plan.png"  class="sidebar-icon" alt="">
-             <span class="side-menu-item">Subscription Plan</span>
-             </a>
+            <a href="subscription-plan.html" class="waves-effect">
+              <img
+                src="./assets/images/icons admin panel/subcription plan.png"
+                class="sidebar-icon"
+                alt=""
+              />
+              <span class="side-menu-item">Subscription Plan</span>
+            </a>
           </li>
-          </li>
-       </ul>
+        </ul>
       </div>
       <!--End sidebar-wrapper-->
       <!--Start topbar header-->
       <header class="topbar-nav">
         <nav class="navbar navbar-expand">
-           <ul class="navbar-nav mr-auto align-items-center">
-              <div class="brand-logo">
-                 <a href="index.html">
-                 <img src="assets/images/logo.png" class="logo" alt="logo icon">
-                 </a>
-              </div>
-           </ul>
-           <ul class="navbar-nav align-items-center right-nav-link">
-              <!-- <li class="nav-item language position-relative">
+          <ul class="navbar-nav mr-auto align-items-center">
+            <div class="brand-logo">
+              <a href="index.html">
+                <img
+                  src="assets/images/logo.png"
+                  class="logo"
+                  alt="logo icon"
+                />
+              </a>
+            </div>
+          </ul>
+          <ul class="navbar-nav align-items-center right-nav-link">
+            <!-- <li class="nav-item language position-relative">
                  <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="#"><i class="flag-icon"><img src="assets/images/Mask_Group_6.png"></i></a>
                  <ul class="dropdown-menu dropdown-menu-right">
                     <div class="position-relative">
@@ -131,85 +158,142 @@
                     <li class="dropdown-item"> <i class="flag-icon flag-icon-ae mr-2"></i> Arabic</li>
                  </ul>
               </li> -->
-              <li class="nav-item dropdown-lg position-relative">
-                 <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();">
-                 <i class="icon-bell"></i><span class="badge badge-danger badge-up">2</span></a>
-                 <div class="dropdown-menu dropdown-menu-right" style="padding: .5rem 0">
-                    <ul class="list-group no-dp list-group-flush" style="box-shadow: none;">
-                       <div class="position-relative">
-                          <span class="dropdown-menu-arrow"></span>
-                       </div>
-                       <li class="list-group-item noti-header01 d-flex justify-content-between align-items-center">
-                          <h6>Notifications</h6>
-                          <span class="fa fa-ellipsis-v"></span>
-                       </li>
-                       <li class="list-group-item">
-                          <a href="javaScript:void();">
-                             <div class="media align-items-center">
-                                <i class="mr-3"><img src="assets/images/Mask_Group_84.png"></i>
-                                <div class="media-body">
-                                   <p class="msg-info">Lorem ipsum dolor sit amet ipsum dolor</p>
-                                   <p>05 May 6:00 PM</p>
-                                </div>
-                             </div>
-                          </a>
-                       </li>
-                       <li class="list-group-item">
-                          <a href="javaScript:void();">
-                             <div class="media align-items-center">
-                                <i class="mr-3"><img src="assets/images/Mask_Group_84.png"></i>
-                                <div class="media-body">
-                                   <p class="msg-info">Lorem ipsum dolor sit amet ipsum dolor</p>
-                                   <p>05 May 6:00 PM</p>
-                                </div>
-                             </div>
-                          </a>
-                       </li>
-                       <li class="list-group-item">
-                          <a href="javaScript:void();">
-                             <div class="media align-items-center">
-                                <i class="mr-3"><img src="assets/images/Mask_Group_84.png"></i>
-                                <div class="media-body">
-                                   <p class="msg-info">Lorem ipsum dolor sit amet ipsum dolor</p>
-                                   <p>05 May 6:00 PM</p>
-                                </div>
-                             </div>
-                          </a>
-                       </li>
-                    </ul>
-                 </div>
-              </li>
-              <li class="nav-item">
-                 <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
-                 <span class="user-profile"><img src="assets/images/NoPath_-_Copy_2.png" class="img-circle" alt="user avatar"><span class="profile-name d-none d-md-inline">Ronnie Woodkin <em class="fas fa-chevron-down"></em></span></span>
-                 </a>
-                <ul class="dropdown-menu dropdown-menu-right cus-drop-menu-right2">
-              <div class="position-relative">
-                 <span class="dropdown-menu-arrow"></span>
+            <li class="nav-item dropdown-lg position-relative">
+              <a
+                class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect"
+                data-toggle="dropdown"
+                href="javascript:void();"
+              >
+                <i class="icon-bell"></i
+                ><span class="badge badge-danger badge-up">2</span></a
+              >
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                style="padding: 0.5rem 0"
+              >
+                <ul
+                  class="list-group no-dp list-group-flush"
+                  style="box-shadow: none"
+                >
+                  <div class="position-relative">
+                    <span class="dropdown-menu-arrow"></span>
+                  </div>
+                  <li
+                    class="list-group-item noti-header01 d-flex justify-content-between align-items-center"
+                  >
+                    <h6>Notifications</h6>
+                    <span class="fa fa-ellipsis-v"></span>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="javaScript:void();">
+                      <div class="media align-items-center">
+                        <i class="mr-3"
+                          ><img src="assets/images/Mask_Group_84.png"
+                        /></i>
+                        <div class="media-body">
+                          <p class="msg-info">
+                            Lorem ipsum dolor sit amet ipsum dolor
+                          </p>
+                          <p>05 May 6:00 PM</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="javaScript:void();">
+                      <div class="media align-items-center">
+                        <i class="mr-3"
+                          ><img src="assets/images/Mask_Group_84.png"
+                        /></i>
+                        <div class="media-body">
+                          <p class="msg-info">
+                            Lorem ipsum dolor sit amet ipsum dolor
+                          </p>
+                          <p>05 May 6:00 PM</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="javaScript:void();">
+                      <div class="media align-items-center">
+                        <i class="mr-3"
+                          ><img src="assets/images/Mask_Group_84.png"
+                        /></i>
+                        <div class="media-body">
+                          <p class="msg-info">
+                            Lorem ipsum dolor sit amet ipsum dolor
+                          </p>
+                          <p>05 May 6:00 PM</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <li class="dropdown-item"><a  href="signin.html">Logout</a></li>
-              <li class="dropdown-item language position-relative">
-                 <a class="dropdown-toggle dropdown-toggle-nocaret" id="languageDropdown" data-toggle="dropdown" href="#">Language -</a>
-                 
-                 <ul class="dropdown-menu dropdown-menu-right">
-                   
-                    <li class="dropdown-item"> <i class="flag-icon flag-icon-gb mr-2"></i> English</li>
-                    <li class="dropdown-item"> <i class="flag-icon flag-icon-ae mr-2"></i> Arabic</li>
-                 </ul>
-              </li>
-              <li class="dropdown-item">Setting -</li>
-              <li class="dropdown-item cus-dropdown-item2"><a href="change-password.html">Change Password</a></li>
-              <li class="dropdown-item cus-dropdown-item3 d-flex align-items-center justify-content-between">
-                 <a href="#">Notifications</a>
-                 <div class="">
-                    <input type="checkbox" class="js-switch" data-color="rgba(23,58,114,1)" data-secondary-color="rgba(23,58,114,1)">
-                 </div>
-              </li>
-           </ul>
-              </li>
-           </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link dropdown-toggle dropdown-toggle-nocaret"
+                data-toggle="dropdown"
+                href="#"
+              >
+                <span class="user-profile"
+                  ><img
+                    src="assets/images/NoPath_-_Copy_2.png"
+                    class="img-circle"
+                    alt="user avatar" /><span
+                    class="profile-name d-none d-md-inline"
+                    >Ronnie Woodkin <em class="fas fa-chevron-down"></em></span
+                ></span>
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-right cus-drop-menu-right2"
+              >
+                <div class="position-relative">
+                  <span class="dropdown-menu-arrow"></span>
+                </div>
+                <li class="dropdown-item"><a href="signin.html">Logout</a></li>
+                <li class="dropdown-item language position-relative">
+                  <a
+                    class="dropdown-toggle dropdown-toggle-nocaret"
+                    id="languageDropdown"
+                    data-toggle="dropdown"
+                    href="#"
+                    >Language -</a
+                  >
+
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li class="dropdown-item">
+                      <i class="flag-icon flag-icon-gb mr-2"></i> English
+                    </li>
+                    <li class="dropdown-item">
+                      <i class="flag-icon flag-icon-ae mr-2"></i> Arabic
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-item">Setting -</li>
+                <li class="dropdown-item cus-dropdown-item2">
+                  <a href="change-password.html">Change Password</a>
+                </li>
+                <li
+                  class="dropdown-item cus-dropdown-item3 d-flex align-items-center justify-content-between"
+                >
+                  <a href="#">Notifications</a>
+                  <div class="">
+                    <input
+                      type="checkbox"
+                      class="js-switch"
+                      data-color="rgba(23,58,114,1)"
+                      data-secondary-color="rgba(23,58,114,1)"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </nav>
-     </header>
+      </header>
       <!--End topbar header-->
       <div class="clearfix"></div>
       <div class="content-wrapper">
@@ -234,78 +318,141 @@
           <div class="row mt-3">
             <div class="col-lg-12">
               <div class="card">
-                <div class="card-header row border-0 pb-4">
-                  <div class="col-lg-12">Intro screen 1</div>
-                </div>
                 <div class="card-body">
-                  <form class="row">
-                    <div
-                      class="form-group col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12"
-                    >
-                      <div class="row">
-                        <label for="basic-input" class="col-sm-2 col-form-label"
-                          >Title</label
-                        >
-                        <div class="col-sm-10">
-                          <textarea
-                            type="text"
-                            style="height: 100px"
-                            id="basic-input"
-                            class="form-control"
-                            placeholder=" Expanding Community "
-                          ></textarea>
+                  <form>
+                    <div class="row">
+                      <div class="col-12">
+                        <h4 class="cms-formsection-heading">About</h4>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group form-row align-items-center">
+                          <label
+                            for="title"
+                            class="col-md-2 col-form-label font-weight-bold"
+                            >Title</label
+                          >
+                          <div class="col-md-10">
+                            <input
+                              type="text"
+                              value="Expanding Community"
+                              class="form-control"
+                              id="title"
+                            />
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="form-group col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12"
-                    >
-                      <div class="row">
-                        <label
-                          for="basic-input"
-                          class="col-sm-2 col-form-label"
-                        >
-                          Subtitle
-                        </label>
-                        <div class="col-sm-10">
-                          <textarea
-                            type="text"
-                            style="height: 100px; white-space: normal"
-                            id="basic-input"
-                            class="form-control"
-                            placeholder="Join games, play with a new players
-                                          and make a team"
-                          ></textarea>
+                      <div class="col-md-6">
+                        <div class="form-group form-row align-items-center">
+                          <label
+                            for="subtitle"
+                            class="col-md-2 col-form-label font-weight-bold"
+                            >Subtitle</label
+                          >
+                          <div class="col-md-10">
+                            <input
+                              type="text"
+                              value="Join games, play with new players, and make a team"
+                              class="form-control"
+                              id="subtitle"
+                            />
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="form-group col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12"
-                    >
-                      <div class="row editIntroUploadRow">
-                        <label for="basic-input" class="col-sm-2 col-form-label"
-                          >Banner Image</label
+                      <div class="col-12">
+                        <h4 class="cms-formsection-heading">App URL</h4>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group form-row align-items-center">
+                          <label
+                            for="appstore"
+                            class="col-md-2 col-form-label font-weight-bold"
+                            >Appstore Link</label
+                          >
+                          <div class="col-md-10">
+                            <input
+                              type="text"
+                              value="iOS App URL"
+                              class="form-control"
+                              id="appstore"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group form-row align-items-center">
+                          <label
+                            for="playstore"
+                            class="col-md-2 col-form-label font-weight-bold"
+                            >Playstore Link</label
+                          >
+                          <div class="col-md-10">
+                            <input
+                              type="text"
+                              value="Android app URL"
+                              class="form-control"
+                              id="playstore"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- banner images -->
+                      <div class="col-12">
+                        <h4 class="cms-formsection-heading">Banner Images</h4>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <div
+                          class="form-group form-row align-items-center desktop-img-group"
                         >
-                        <div class="col-sm-8">
-                          <div class="form-group">
-                            <div class="row" style="align-items: end">
-                              <div class="col-lg-8">
-                                <div class="main-img-preview">
-                                  <img
-                                    class="thumbnail img-preview"
-                                    src="assets/images/crop-legs-shooting-ball.png"
-                                    title="Preview Logo"
-                                  />
+                          <label
+                            for="desktopBanner"
+                            class="col-md-1 col-form-label font-weight-bold"
+                            >Desktop Banner</label
+                          >
+                          <div class="col-md-11">
+                            <div class="row align-items-center">
+                              <div class="col-md-9">
+                                <div class="row thumbs-row">
+                                  <div class="col-md-4">
+                                    <div class="main-img-preview">
+                                      <img
+                                        class="thumbnail img-preview"
+                                        src="assets/images/banner1.jpg"
+                                        title="Preview Logo"
+                                      />
+                                      <span class="remove-img">
+                                        <em class="fas fa-times-circle"></em>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="main-img-preview">
+                                      <img
+                                        class="thumbnail img-preview"
+                                        src="assets/images/banner2.jpg"
+                                        title="Preview Logo"
+                                      />
+                                      <span class="remove-img">
+                                        <em class="fas fa-times-circle"></em>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="main-img-preview">
+                                      <img
+                                        class="thumbnail img-preview"
+                                        src="assets/images/banner3.jpg"
+                                        title="Preview Logo"
+                                      />
+                                      <span class="remove-img">
+                                        <em class="fas fa-times-circle"></em>
+                                      </span>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
-                              <div class="col-lg-2">
-                                <div class="input-group">
-                                  <input
-                                    id="fakeUploadLogo"
-                                    style="display: none"
-                                    class="form-control fake-shadow"
-                                    disabled="disabled"
-                                  />
+
+                              <div class="col-md-3">
+                                <div class="input-group justify-content-center">
                                   <div class="input-group-btn">
                                     <div
                                       class="fileUpload btn btn-danger fake-shadow"
@@ -318,7 +465,9 @@
                                         <span class="fa fa-upload"></span
                                       ></span>
                                       <input
-                                        id="logo-id"
+                                        accept="image/*"
+                                        multiple
+                                        id="desktopBanner"
                                         name="logo"
                                         type="file"
                                         class="attachment_upload"
@@ -331,54 +480,60 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="form-group col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12"
-                    >
-                      <div class="row">
-                        <label
-                          for="basic-input"
-                          class="col-sm-2 col-form-label"
+                      <div class="col-md-12">
+                        <div
+                          class="form-group form-row align-items-center mobile-img-group"
                         >
-                          App URL
-                        </label>
-                        <div class="col-sm-10">
-                          <input
-                            type="text"
-                            id="basic-input"
-                            class="form-control"
-                            placeholder="Url"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="form-group col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12"
-                    >
-                      <div class="row editIntroUploadRow">
-                        <label for="basic-input" class="col-sm-2 col-form-label"
-                          >Player Image</label
-                        >
-                        <div class="col-sm-10">
-                          <div class="form-group">
-                            <div class="row" style="align-items: end">
-                              <div class="col-lg-6">
-                                <div class="main-img-preview">
-                                  <img
-                                    class="thumbnail img-preview"
-                                    src="assets/images/Mask_Group_81.png"
-                                    title="Preview Logo"
-                                  />
+                          <label
+                            for="mobileBanner"
+                            class="col-md-1 col-form-label font-weight-bold"
+                            >Mobile Banner</label
+                          >
+                          <div class="col-md-11">
+                            <div class="row align-items-center">
+                              <div class="col-md-9">
+                                <div class="row thumbs-row">
+                                  <div class="col-md-4">
+                                    <div class="main-img-preview">
+                                      <img
+                                        class="thumbnail img-preview mobile-banner-thumbnail"
+                                        src="assets/images/banner1-mobile.jpg"
+                                        title="Preview Logo"
+                                      />
+                                      <span class="remove-img">
+                                        <em class="fas fa-times-circle"></em>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="main-img-preview">
+                                      <img
+                                        class="thumbnail img-preview mobile-banner-thumbnail"
+                                        src="assets/images/banner2-mobile.jpg"
+                                        title="Preview Logo"
+                                      />
+                                      <span class="remove-img">
+                                        <em class="fas fa-times-circle"></em>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="main-img-preview">
+                                      <img
+                                        class="thumbnail img-preview mobile-banner-thumbnail"
+                                        src="assets/images/banner3-mobile.jpg"
+                                        title="Preview Logo"
+                                      />
+                                      <span class="remove-img">
+                                        <em class="fas fa-times-circle"></em>
+                                      </span>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
-                              <div class="col-lg-2">
-                                <div class="input-group">
-                                  <input
-                                    id="fakeUploadLogo"
-                                    style="display: none"
-                                    class="form-control fake-shadow"
-                                    disabled="disabled"
-                                  />
+
+                              <div class="col-md-3">
+                                <div class="input-group justify-content-center">
                                   <div class="input-group-btn">
                                     <div
                                       class="fileUpload btn btn-danger fake-shadow"
@@ -391,7 +546,9 @@
                                         <span class="fa fa-upload"></span
                                       ></span>
                                       <input
-                                        id="logo-id"
+                                        accept="image/*"
+                                        multiple
+                                        id="mobileBanner"
                                         name="logo"
                                         type="file"
                                         class="attachment_upload"
@@ -404,34 +561,284 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="form-group col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12"
-                    >
-                      <div class="row editIntroUploadRow">
-                        <label for="basic-input" class="col-sm-2 col-form-label"
-                          >Pitch Owner Image</label
+
+                      <!-- explore your roles -->
+                      <div class="col-12">
+                        <h4 class="cms-formsection-heading">
+                          Explore Your Role
+                        </h4>
+                      </div>
+                      <div class="col-12 role-wrapper">
+                        <div
+                          class="form-group form-row align-items-center player-img-group"
                         >
-                        <div class="col-sm-10">
-                          <div class="form-group">
-                            <div class="row" style="align-items: end">
-                              <div class="col-lg-6">
-                                <div class="main-img-preview">
-                                  <img
-                                    class="thumbnail img-preview"
-                                    src="assets/images/Mask_Group_83.png"
-                                    title="Preview Logo"
-                                  />
+                          <label
+                            class="col-md-1 col-form-label font-weight-bold"
+                            >1. Player</label
+                          >
+                          <div class="col-md-11">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="row align-items-center">
+                                  <div class="col-6 text-center thumbs-row">
+                                    <label
+                                      for="playerImage"
+                                      class="col-form-label font-weight-bold"
+                                      >Choose an Image</label
+                                    >
+                                    <div class="main-img-preview">
+                                      <img
+                                        class="thumbnail img-preview role-thumb"
+                                        src="assets/images/Mask_Group_81.png"
+                                        title="Preview Logo"
+                                      />
+                                      <span class="remove-img">
+                                        <em class="fas fa-times-circle"></em>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div
+                                      class="input-group justify-content-center"
+                                    >
+                                      <div class="input-group-btn">
+                                        <div
+                                          class="fileUpload btn btn-danger fake-shadow"
+                                        >
+                                          <span
+                                            ><i
+                                              class="glyphicon glyphicon-upload"
+                                            ></i>
+                                            Choose File
+                                            <span class="fa fa-upload"></span
+                                          ></span>
+                                          <input
+                                            accept="image/*"
+                                            id="playerImage"
+                                            name="logo"
+                                            type="file"
+                                            class="attachment_upload"
+                                          />
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
-                              <div class="col-lg-2">
-                                <div class="input-group">
-                                  <input
-                                    id="fakeUploadLogo"
-                                    style="display: none"
-                                    class="form-control fake-shadow"
-                                    disabled="disabled"
-                                  />
+                              <div class="col-md-6">
+                                <label
+                                  for="playerDesc"
+                                  class="col-form-label font-weight-bold"
+                                  >Write a Description</label
+                                >
+                                <textarea
+                                  id="playerDesc"
+                                  class="form-control cms-role-textarea"
+                                >
+Lorem Ipsum is simply dummy text of the printing and typesetting industry</textarea
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 role-wrapper">
+                        <div
+                          class="form-group form-row align-items-center coach-img-group"
+                        >
+                          <label
+                            class="col-md-1 col-form-label font-weight-bold"
+                            >2. Coach / Organizer</label
+                          >
+                          <div class="col-md-11">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="row align-items-center">
+                                  <div class="col-6 text-center thumbs-row">
+                                    <label
+                                      for="coachImage"
+                                      class="col-form-label font-weight-bold"
+                                      >Choose an Image</label
+                                    >
+                                    <div class="main-img-preview">
+                                      <img
+                                        class="thumbnail img-preview role-thumb"
+                                        src="assets/images/Mask_Group_82.png"
+                                        title="Preview Logo"
+                                      />
+                                      <span class="remove-img">
+                                        <em class="fas fa-times-circle"></em>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div
+                                      class="input-group justify-content-center"
+                                    >
+                                      <div class="input-group-btn">
+                                        <div
+                                          class="fileUpload btn btn-danger fake-shadow"
+                                        >
+                                          <span
+                                            ><i
+                                              class="glyphicon glyphicon-upload"
+                                            ></i>
+                                            Choose File
+                                            <span class="fa fa-upload"></span
+                                          ></span>
+                                          <input
+                                            accept="image/*"
+                                            id="coachImage"
+                                            name="logo"
+                                            type="file"
+                                            class="attachment_upload"
+                                          />
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <label
+                                  for="coachDesc"
+                                  class="col-form-label font-weight-bold"
+                                  >Write a Description</label
+                                >
+                                <textarea
+                                  id="coachDesc"
+                                  class="form-control cms-role-textarea"
+                                >
+Lorem Ipsum is simply dummy text of the printing and typesetting industry</textarea
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 role-wrapper">
+                        <div
+                          class="form-group form-row align-items-center pitchowner-img-group"
+                        >
+                          <label
+                            class="col-md-1 col-form-label font-weight-bold"
+                            >3. Pitch Owner</label
+                          >
+                          <div class="col-md-11">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="row align-items-center">
+                                  <div class="col-6 text-center thumbs-row">
+                                    <label
+                                      for="pitchownerImage"
+                                      class="col-form-label font-weight-bold"
+                                      >Choose an Image</label
+                                    >
+                                    <div class="main-img-preview">
+                                      <img
+                                        class="thumbnail img-preview role-thumb"
+                                        src="assets/images/Mask_Group_83.png"
+                                        title="Preview Logo"
+                                      />
+                                      <span class="remove-img">
+                                        <em class="fas fa-times-circle"></em>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div
+                                      class="input-group justify-content-center"
+                                    >
+                                      <div class="input-group-btn">
+                                        <div
+                                          class="fileUpload btn btn-danger fake-shadow"
+                                        >
+                                          <span
+                                            ><i
+                                              class="glyphicon glyphicon-upload"
+                                            ></i>
+                                            Choose File
+                                            <span class="fa fa-upload"></span
+                                          ></span>
+                                          <input
+                                            accept="image/*"
+                                            id="pitchownerImage"
+                                            name="logo"
+                                            type="file"
+                                            class="attachment_upload"
+                                          />
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <label
+                                  for="pitchownerDesc"
+                                  class="col-form-label font-weight-bold"
+                                  >Write a Description</label
+                                >
+                                <textarea
+                                  id="pitchownerDesc"
+                                  class="form-control cms-role-textarea"
+                                >
+Lorem Ipsum is simply dummy text of the printing and typesetting industry</textarea
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Application Feature images -->
+                      <div class="col-12">
+                        <h4 class="cms-formsection-heading">
+                          Application Features
+                        </h4>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <div
+                          class="form-group form-row align-items-center desktop-appfeature-group"
+                        >
+                          <label
+                            for="desktopAppFeature"
+                            class="col-md-1 col-form-label font-weight-bold"
+                            >Desktop Images</label
+                          >
+                          <div class="col-md-11">
+                            <div class="row align-items-center">
+                              <div class="col-md-9">
+                                <div class="row thumbs-row">
+                                  <div class="col-md-6">
+                                    <div class="main-img-preview">
+                                      <img
+                                        class="thumbnail img-preview"
+                                        src="assets/images/app-feature-1.jpg"
+                                        title="Preview Logo"
+                                      />
+                                      <span class="remove-img">
+                                        <em class="fas fa-times-circle"></em>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="main-img-preview">
+                                      <img
+                                        class="thumbnail img-preview"
+                                        src="assets/images/app-feature-2.jpg"
+                                        title="Preview Logo"
+                                      />
+                                      <span class="remove-img">
+                                        <em class="fas fa-times-circle"></em>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <div class="input-group justify-content-center">
                                   <div class="input-group-btn">
                                     <div
                                       class="fileUpload btn btn-danger fake-shadow"
@@ -444,7 +851,9 @@
                                         <span class="fa fa-upload"></span
                                       ></span>
                                       <input
-                                        id="logo-id"
+                                        accept="image/*"
+                                        multiple
+                                        id="desktopAppFeature"
                                         name="logo"
                                         type="file"
                                         class="attachment_upload"
@@ -457,32 +866,48 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="form-group col-xl-6 col-lg-12">
-                      <div class="row editIntroUploadRow">
-                        <label for="basic-input" class="col-sm-2 col-form-label"
-                          >Coach Image</label
+                      <div class="col-md-12">
+                        <div
+                          class="form-group form-row align-items-center mobile-appfeature-group"
                         >
-                        <div class="col-sm-10">
-                          <div class="form-group">
-                            <div class="row" style="align-items: end">
-                              <div class="col-lg-6">
-                                <div class="main-img-preview">
-                                  <img
-                                    class="thumbnail img-preview"
-                                    src="assets/images/Mask_Group_82.png"
-                                    title="Preview Logo"
-                                  />
+                          <label
+                            for="mobileAppFeature"
+                            class="col-md-1 col-form-label font-weight-bold"
+                            >Mobile Images</label
+                          >
+                          <div class="col-md-11">
+                            <div class="row align-items-center">
+                              <div class="col-md-9">
+                                <div class="row thumbs-row">
+                                  <div class="col-md-6">
+                                    <div class="main-img-preview">
+                                      <img
+                                        class="thumbnail img-preview"
+                                        src="assets/images/app-feature-1-mobile.jpg"
+                                        title="Preview Logo"
+                                      />
+                                      <span class="remove-img">
+                                        <em class="fas fa-times-circle"></em>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="main-img-preview">
+                                      <img
+                                        class="thumbnail img-preview"
+                                        src="assets/images/app-feature-2-mobile.jpg"
+                                        title="Preview Logo"
+                                      />
+                                      <span class="remove-img">
+                                        <em class="fas fa-times-circle"></em>
+                                      </span>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
-                              <div class="col-lg-2">
-                                <div class="input-group">
-                                  <input
-                                    id="fakeUploadLogo"
-                                    style="display: none"
-                                    class="form-control fake-shadow"
-                                    disabled="disabled"
-                                  />
+
+                              <div class="col-md-3">
+                                <div class="input-group justify-content-center">
                                   <div class="input-group-btn">
                                     <div
                                       class="fileUpload btn btn-danger fake-shadow"
@@ -495,7 +920,9 @@
                                         <span class="fa fa-upload"></span
                                       ></span>
                                       <input
-                                        id="logo-id"
+                                        accept="image/*"
+                                        multiple
+                                        id="mobileAppFeature"
                                         name="logo"
                                         type="file"
                                         class="attachment_upload"
@@ -508,171 +935,201 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="form-group col-lg-6"></div>
-                    <div class="form-group col-lg-12">
-                      <div class="row">
-                        <label
-                          for="basic-input"
-                          class="col-lg-1 col-form-label"
-                        >
-                          Social Media Icon
-                        </label>
-                        <div class="col-lg-10">
-                          <div class="row">
-                            <div class="col-3 editSocialImgRow">
-                              <div>Facebook</div>
-                              <div class="social-img-preview my-3">
-                                <img class="thumbnail img-preview social-icon-preview" src="./assets/images/social-icons/fb.png" title="Preview Logo">
-                              </div>
-                              <div class="input-group">
-                                <input
-                                  id="fakeUploadLogo"
-                                  style="display: none"
-                                  class="form-control fake-shadow"
-                                  disabled="disabled"
-                                />
-                                <div class="input-group-btn">
-                                  <div
-                                    class="fileUpload btn btn-danger fake-shadow"
-                                  >
-                                    <span
-                                      ><i
-                                        class="glyphicon glyphicon-upload"
-                                      ></i>
-                                      Choose File
-                                      <span class="fa fa-upload"></span
-                                    ></span>
-                                    <input
-                                      id="logo-id"
-                                      name="logo"
-                                      type="file"
-                                      class="attachment_upload"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
+
+                      <!-- social media icons -->
+                      <div class="col-12">
+                        <h4 class="cms-formsection-heading">
+                          Social Media Icons
+                        </h4>
+                      </div>
+                      <div class="col-12 text-center">
+                        <div class="row">
+                          <div
+                            class="col-6 col-md-3 mb-3 mb-md-0 editSocialImgRow"
+                          >
+                            <div>Facebook</div>
+                            <div class="social-img-preview my-3">
+                              <img
+                                class="thumbnail img-preview social-icon-preview"
+                                src="./assets/images/social-icons/fb.png"
+                                title="Preview Logo"
+                              />
                             </div>
-                            <div class="col-3 editSocialImgRow">
-                              <div>Twitter</div>
-                              <div class="social-img-preview my-3">
-                                <img class="thumbnail img-preview social-icon-preview" src="./assets/images/social-icons/twitter.png" title="Preview Logo">
-                              </div>
-                              <div class="input-group">
-                                <input
-                                  id="fakeUploadLogo"
-                                  style="display: none"
-                                  class="form-control fake-shadow"
-                                  disabled="disabled"
-                                />
-                                <div class="input-group-btn">
-                                  <div
-                                    class="fileUpload btn btn-danger fake-shadow"
-                                  >
-                                    <span
-                                      ><i
-                                        class="glyphicon glyphicon-upload"
-                                      ></i>
-                                      Choose File
-                                      <span class="fa fa-upload"></span
-                                    ></span>
-                                    <input
-                                      id="logo-id"
-                                      name="logo"
-                                      type="file"
-                                      class="attachment_upload"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-3 editSocialImgRow">
-                              <div>LinkedIn</div>
-                              <div class="social-img-preview my-3">
-                                <img class="thumbnail img-preview social-icon-preview" src="./assets/images/social-icons/linkedin.png" title="Preview Logo">
-                              </div>
-                              <div class="input-group">
-                                <input
-                                  id="fakeUploadLogo"
-                                  style="display: none"
-                                  class="form-control fake-shadow"
-                                  disabled="disabled"
-                                />
-                                <div class="input-group-btn">
-                                  <div
-                                    class="fileUpload btn btn-danger fake-shadow"
-                                  >
-                                    <span
-                                      ><i
-                                        class="glyphicon glyphicon-upload"
-                                      ></i>
-                                      Choose File
-                                      <span class="fa fa-upload"></span
-                                    ></span>
-                                    <input
-                                      id="logo-id"
-                                      name="logo"
-                                      type="file"
-                                      class="attachment_upload"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-3 editSocialImgRow">
-                              <div>Instagram</div>
-                              <div class="social-img-preview my-3">
-                                <img class="thumbnail img-preview social-icon-preview" src="./assets/images/social-icons/insta.png" title="Preview Logo">
-                              </div>
-                              <div class="input-group">
-                                <input
-                                  id="fakeUploadLogo"
-                                  style="display: none"
-                                  class="form-control fake-shadow"
-                                  disabled="disabled"
-                                />
-                                <div class="input-group-btn">
-                                  <div
-                                    class="fileUpload btn btn-danger fake-shadow"
-                                  >
-                                    <span
-                                      ><i
-                                        class="glyphicon glyphicon-upload"
-                                      ></i>
-                                      Choose File
-                                      <span class="fa fa-upload"></span
-                                    ></span>
-                                    <input
-                                      id="logo-id"
-                                      name="logo"
-                                      type="file"
-                                      class="attachment_upload"
-                                    />
-                                  </div>
+                            <div class="input-group justify-content-center">
+                              <div class="input-group-btn">
+                                <div
+                                  class="fileUpload btn btn-danger fake-shadow"
+                                >
+                                  <span
+                                    ><i class="glyphicon glyphicon-upload"></i>
+                                    Choose File
+                                    <span class="fa fa-upload"></span
+                                  ></span>
+                                  <input
+                                    id="logo-id"
+                                    name="logo"
+                                    type="file"
+                                    class="attachment_upload"
+                                  />
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <!-- <ul class="socail-media-links-icon">
-                            <li>
-                              <a href=""
-                                ><span class="fa fa-facebook"></span
-                              ></a>
-                            </li>
-                            <li>
-                              <a href=""><span class="fa fa-twitter"></span></a>
-                            </li>
-                            <li>
-                              <a href=""
-                                ><span class="fa fa-linkedin"></span
-                              ></a>
-                            </li>
-                            <li>
-                              <a href=""
-                                ><span class="fa fa-instagram"></span
-                              ></a>
-                            </li>
-                          </ul> -->
+                          <div
+                            class="col-6 col-md-3 mb-3 mb-md-0 editSocialImgRow"
+                          >
+                            <div>Twitter</div>
+                            <div class="social-img-preview my-3">
+                              <img
+                                class="thumbnail img-preview social-icon-preview"
+                                src="./assets/images/social-icons/twitter.png"
+                                title="Preview Logo"
+                              />
+                            </div>
+                            <div class="input-group justify-content-center">
+                              <div class="input-group-btn">
+                                <div
+                                  class="fileUpload btn btn-danger fake-shadow"
+                                >
+                                  <span
+                                    ><i class="glyphicon glyphicon-upload"></i>
+                                    Choose File
+                                    <span class="fa fa-upload"></span
+                                  ></span>
+                                  <input
+                                    id="logo-id"
+                                    name="logo"
+                                    type="file"
+                                    class="attachment_upload"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-6 col-md-3 mb-3 mb-md-0 editSocialImgRow"
+                          >
+                            <div>LinkedIn</div>
+                            <div class="social-img-preview my-3">
+                              <img
+                                class="thumbnail img-preview social-icon-preview"
+                                src="./assets/images/social-icons/linkedin.png"
+                                title="Preview Logo"
+                              />
+                            </div>
+                            <div class="input-group justify-content-center">
+                              <div class="input-group-btn">
+                                <div
+                                  class="fileUpload btn btn-danger fake-shadow"
+                                >
+                                  <span
+                                    ><i class="glyphicon glyphicon-upload"></i>
+                                    Choose File
+                                    <span class="fa fa-upload"></span
+                                  ></span>
+                                  <input
+                                    id="logo-id"
+                                    name="logo"
+                                    type="file"
+                                    class="attachment_upload"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-6 col-md-3 mb-3 mb-md-0 editSocialImgRow"
+                          >
+                            <div>Instagram</div>
+                            <div class="social-img-preview my-3">
+                              <img
+                                class="thumbnail img-preview social-icon-preview"
+                                src="./assets/images/social-icons/insta.png"
+                                title="Preview Logo"
+                              />
+                            </div>
+                            <div class="input-group justify-content-center">
+                              <input
+                                id="fakeUploadLogo"
+                                style="display: none"
+                                class="form-control fake-shadow"
+                                disabled="disabled"
+                              />
+                              <div class="input-group-btn">
+                                <div
+                                  class="fileUpload btn btn-danger fake-shadow"
+                                >
+                                  <span
+                                    ><i class="glyphicon glyphicon-upload"></i>
+                                    Choose File
+                                    <span class="fa fa-upload"></span
+                                  ></span>
+                                  <input
+                                    id="logo-id"
+                                    name="logo"
+                                    type="file"
+                                    class="attachment_upload"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Contact details -->
+                      <div class="col-12">
+                        <h4 class="cms-formsection-heading">Contact Details</h4>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group form-row align-items-center">
+                          <label
+                            for="email"
+                            class="col-md-2 col-form-label font-weight-bold"
+                            >E-mail</label
+                          >
+                          <div class="col-md-10">
+                            <input
+                              type="text"
+                              value="test@domain.com"
+                              class="form-control"
+                              id="email"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group form-row align-items-center">
+                          <label
+                            for="phone"
+                            class="col-md-2 col-form-label font-weight-bold"
+                            >Phone</label
+                          >
+                          <div class="col-md-10">
+                            <input
+                              type="text"
+                              value="2222222222"
+                              class="form-control"
+                              id="phone"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group form-row align-items-center">
+                          <label
+                            for="address"
+                            class="col-md-1 col-form-label font-weight-bold"
+                            >Address</label
+                          >
+                          <div class="col-md-11">
+                            <input
+                              type="text"
+                              value=" Address line 1,  Address line 2, State, City, Country, Zip Code"
+                              class="form-control"
+                              id="address"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -708,32 +1165,76 @@
     <!-- Bootstrap core JavaScript-->
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-        var logoIds = document.querySelectorAll(".editIntroUploadRow");
-        var editSocialImgRow = document.querySelectorAll(".editSocialImgRow");
-        logoIds.forEach(function (logoId) {
-          var brand = logoId.querySelector("#logo-id");
-          brand.className = "attachment_upload";
-          brand.onchange = function () {
-            logoId.querySelector("#fakeUploadLogo").value =
-              this.value.substring(12);
-          };
-          function readURL(input) {
-            if (input.files && input.files[0]) {
-              var reader = new FileReader();
+      $(document).ready(function () {
+        // desktop banner
+        var desktopBannerGroup = document.querySelector(".desktop-img-group");
+        customImageUploader(desktopBannerGroup, "col-md-4");
 
-              reader.onload = function (e) {
-                var imgPreview = logoId.querySelector(".img-preview");
-                $(imgPreview).attr("src", e.target.result);
-              };
-              reader.readAsDataURL(input.files[0]);
+        // mobile banner
+        var mobileBannerGroup = document.querySelector(".mobile-img-group");
+        customImageUploader(
+          mobileBannerGroup,
+          "col-md-4",
+          "mobile-banner-thumbnail"
+        );
+
+        // desktop application features
+        var desktopAppfeatureGroup = document.querySelector(
+          ".desktop-appfeature-group"
+        );
+        customImageUploader(desktopAppfeatureGroup, "col-md-6");
+
+        // mobile application features
+        var mobileAppfeatureGroup = document.querySelector(
+          ".mobile-appfeature-group"
+        );
+        customImageUploader(mobileAppfeatureGroup, "col-md-6");
+
+        // player image
+        var playerImgGroup = document.querySelector(".player-img-group");
+        customImageUploader(playerImgGroup, "", "role-thumb");
+
+        // coach/organizer image
+        var playerImgGroup = document.querySelector(".coach-img-group");
+        customImageUploader(playerImgGroup, "", "role-thumb");
+
+        // pitch owner image
+        var pitchOwnerImgGroup = document.querySelector(
+          ".pitchowner-img-group"
+        );
+        customImageUploader(pitchOwnerImgGroup, "", "role-thumb");
+
+        // function image upload
+        function customImageUploader(
+          imgUploadGroup,
+          thumbColClass = "",
+          thumbClass = ""
+        ) {
+          let thumbsRow = imgUploadGroup.querySelector(".thumbs-row");
+          let uploadInput = imgUploadGroup.querySelector(".attachment_upload");
+          $(uploadInput).change(function (e) {
+            let allImages = e.target.files;
+            let uploadInputId = $(e.target).prop("id");
+            console.log(uploadInputId);
+            let thumbnailHtml = "";
+            for (let i = 0; i < allImages.length; i++) {
+              let newImgEl = `<div class='thumbnail-col ${thumbColClass}' id='${uploadInputId}_${i}'><div class="main-img-preview mb-3"><img class="thumbnail img-preview ${thumbClass}" src=${URL.createObjectURL(
+                allImages[i]
+              )} title=${
+                allImages[i].name
+              } /><span class="remove-img"><em class="fas fa-times-circle"></em></span></div></div>`;
+
+              thumbnailHtml += newImgEl;
+
+              thumbsRow.innerHTML = thumbnailHtml;
             }
-          }
-
-          $(brand).change(function () {
-            readURL(this);
           });
-        });
+        }
+
+        //end of  function image upload
+
+        // social media image upload function
+        var editSocialImgRow = document.querySelectorAll(".editSocialImgRow");
         editSocialImgRow.forEach(function (logoId) {
           var brand = logoId.querySelector("#logo-id");
           brand.className = "attachment_upload";
@@ -757,6 +1258,7 @@
             readURL(this);
           });
         });
+        // end of social media image upload function
       });
     </script>
     <script src="assets/js/popper.min.js"></script>
@@ -783,6 +1285,8 @@
     <script src="assets\plugins\d3\d3.min.js"></script>
     <script src="assets\plugins\c3\js\c3.min.js"></script>
     <script src="assets\plugins\c3\js\c3.js"></script>
+    <!-- c3 Charts -->
+    <script src="assets\plugins\d3\d3.min.js"></script>
     <script type="text/javascript">
       // Get all the dropdown from document
       document.querySelectorAll(".dropdown-toggle").forEach(dropDownFunc);
@@ -845,8 +1349,6 @@
 
       // Close the openend Dropdowns
       function closeDropdown() {
-        console.log("run");
-
         // remove the open and active class from other opened Dropdown (Closing the opend DropDown)
         document
           .querySelectorAll(".dropdown-container")
